@@ -329,6 +329,7 @@
                                         </ul> -->
                                     </li>
                                     <li><a href="#ejes-tematicos" title="">Ejes Tematicos</a></li>
+                                    <li><a href="#concursos" title="">Concursos</a></li>
                                     <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Madre de Dios</a>
                                         <ul class="children mb-0 list-unstyled">
                                             
@@ -402,6 +403,7 @@
                             <li><a href="faq.html" title="">FAQ'S Page</a></li>
                         </ul> -->
                     </li>
+                    <li><a href="#concursos" title="">Concursos</a></li>
                     <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Madre de Dios</a>
                         <!-- <ul class="children list-unstyled">
                             <li><a href="gallery.html" title="">Gallery</a></li>
@@ -754,7 +756,215 @@
                 </div>
             </section>
           
-          
+            <section id="concursos">
+                <div class="w-100 pt-120 pb-120 position-relative">
+                    <div class="container">
+                        <div class="sec-title mb-70 w-100 text-center">
+                            <div class="sec-title-inner d-inline-block">
+                                <span class="d-block thm-clr">Participa y Gana</span>
+                                <h2 class="mb-0">Concursos del XXIV CONEIA 2025</h2>
+                                <i class=""></i>
+                            </div>
+                        </div><!-- Sec Title -->
+                        
+                        <div class="concursos-wrap w-100">
+                            <div class="row">
+                                <!-- Concurso de Danzas -->
+                                <div class="col-md-6 col-sm-12 col-lg-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 20px;">
+                                        <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 10px;">
+                                            <h4 class="mb-0">11 de Noviembre</h4>
+                                            <span>Martes - 2025</span>
+                                        </div>
+                                        <div class="event-info w-100">
+                                            <h3 class="mb-3 text-center"><a href="#" title="">Concurso de Danzas y Expresiones Artísticas</a></h3>
+                                            <ul class="event-meta mb-3 list-unstyled">
+                                                <li><i class="far fa-clock thm-clr"></i> <strong>Horario:</strong> Por definir</li>
+                                                <li><i class="fas fa-map-marker-alt thm-clr"></i> <strong>Lugar:</strong> Polideportivo "Hugo Martínez Calderón"</li>
+                                                <li><i class="fas fa-map-pin thm-clr"></i> <strong>Dirección:</strong> Av. Jorge Chávez N°1160</li>
+                                            </ul>
+                                            <p class="mb-3">Espacio dedicado a celebrar la creatividad, el talento y la diversidad cultural de nuestro país a través de la comunidad estudiantil.</p>
+                                            
+                                            <div class="event-details mt-3">
+                                                <h5 class="mb-2" style="color: #667eea;">📋 Inscripciones:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-calendar-alt thm-clr"></i> <strong>Período:</strong> Del 1 de julio al 31 de octubre del 2025</li>
+                                                    <li><i class="fas fa-money-bill-wave thm-clr"></i> <strong>Costo:</strong> S/. 50 por grupo</li>
+                                                    <li><i class="fas fa-users thm-clr"></i> <strong>Participación:</strong> De 6 a 12 parejas (mínimo y máximo)</li>
+                                                    <li><i class="fas fa-clock thm-clr"></i> <strong>Duración máxima:</strong> 7 minutos en escena</li>
+                                                    <li><i class="fas fa-university thm-clr"></i> <strong>Límite:</strong> Máximo 1 equipo por universidad</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #667eea;">💳 Cuenta para pagos:</h5>
+                                                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                                                    <p class="mb-1"><strong>BCP:</strong></p>
+                                                    <p class="mb-1">Salinas Luis -o- López Manuel</p>
+                                                    <p class="mb-1">N° de cuenta: 485-07374631-0-90</p>
+                                                    <p class="mb-0">Yape: +51 982701343</p>
+                                                </div>
+                                                
+                                                <h5 class="mb-2" style="color: #667eea;">🏆 Premios:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-trophy" style="color: gold;"></i> <strong>1er lugar:</strong> S/. 400 + souvenirs</li>
+                                                    <li><i class="fas fa-medal" style="color: silver;"></i> <strong>2do lugar:</strong> S/. 250 + souvenirs</li>
+                                                    <li><i class="fas fa-medal" style="color: #cd7f32;"></i> <strong>3er lugar:</strong> S/. 150</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #667eea;">📊 Criterios de Evaluación:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li>• Puntualidad (10 pts)</li>
+                                                    <li>• Presentación (15 pts)</li>
+                                                    <li>• Representación Cultural (15 pts)</li>
+                                                    <li>• Creatividad y Originalidad (15 pts)</li>
+                                                    <li>• Técnica y Ejecución (15 pts)</li>
+                                                    <li>• Coherencia y Puesta en Escena (15 pts)</li>
+                                                    <li>• Expresión y Proyección (15 pts)</li>
+                                                </ul>
+                                                
+                                                <a class="thm-btn d-inline-block w-100 text-center" href="bases_concurso/BASES DEL CONCURSO DE DANZAS Y EXPRESIONES ARTISTICAS_XXIV CONEIA 2025 MADRE DE DIOS.pdf" download>
+                                                    <i class="fas fa-download"></i> Descargar Bases Completas
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Concurso Miss y Mister -->
+                                <div class="col-md-6 col-sm-12 col-lg-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 20px;">
+                                        <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 15px; border-radius: 10px;">
+                                            <h4 class="mb-0">13 de Noviembre</h4>
+                                            <span>Jueves - 2025</span>
+                                        </div>
+                                        <div class="event-info w-100">
+                                            <h3 class="mb-3 text-center"><a href="#" title="">Concurso Miss y Mister XXIV CONEIA 2025</a></h3>
+                                            <ul class="event-meta mb-3 list-unstyled">
+                                                <li><i class="far fa-clock thm-clr"></i> <strong>Horario:</strong> 7:00 PM</li>
+                                                <li><i class="fas fa-map-marker-alt thm-clr"></i> <strong>Lugar:</strong> Centro de Eventos TEOKAS</li>
+                                            </ul>
+                                            <p class="mb-3">Busca destacar la belleza, el carisma, la inteligencia y el compromiso cultural de los estudiantes universitarios.</p>
+                                            
+                                            <div class="event-details mt-3">
+                                                <h5 class="mb-2" style="color: #f093fb;">📋 Inscripciones:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-calendar-alt thm-clr"></i> <strong>Período:</strong> Del 26 de julio al 10 de noviembre del 2025 (4:00 PM)</li>
+                                                    <li><i class="fas fa-money-bill-wave thm-clr"></i> <strong>Costo:</strong> S/. 60 por pareja</li>
+                                                    <li><i class="fas fa-users thm-clr"></i> <strong>Participación:</strong> 1 pareja por universidad (dama y caballero)</li>
+                                                    <li><i class="fas fa-envelope thm-clr"></i> <strong>Email:</strong> hapazac211ia@unamad.edu.pe</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #f093fb;">💳 Cuenta para pagos:</h5>
+                                                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                                                    <p class="mb-1"><strong>Yape:</strong></p>
+                                                    <p class="mb-1">Hanay Leidy Apaza Chivigorre</p>
+                                                    <p class="mb-0">Número: +51 993 012 083</p>
+                                                </div>
+                                                
+                                                <h5 class="mb-2" style="color: #f093fb;">👗 Desarrollo del Certamen:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li>• Desfile en ropa sport (casual)</li>
+                                                    <li>• Desfile con traje típico de su región</li>
+                                                    <li>• Show de talentos (máx. 5 min)</li>
+                                                    <li>• Desfile con ropa de gala</li>
+                                                    <li>• Pregunta individual</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #f093fb;">🏆 Premios:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><strong>MISS XXIV CONEIA 2025:</strong></li>
+                                                    <li>• Corona + Banda + Premio sorpresa + Ramo de flores</li>
+                                                    <li><strong>MR XXIV CONEIA 2025:</strong></li>
+                                                    <li>• Banda + Premio sorpresa</li>
+                                                    <li><strong>Segundo puesto:</strong> Premio sorpresa</li>
+                                                </ul>
+                                                
+                                                <a class="thm-btn d-inline-block w-100 text-center" href="bases_concurso/BASES_DEL_CONCURSO_MISS_Y_MISTER_XXIV_CONEIA_2025.pdf" download>
+                                                    <i class="fas fa-download"></i> Descargar Bases Completas
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Copa Inter-Universidades -->
+                                <div class="col-md-6 col-sm-12 col-lg-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 20px;">
+                                        <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 15px; border-radius: 10px;">
+                                            <h4 class="mb-0">12 de Noviembre</h4>
+                                            <span>Miércoles - 2025</span>
+                                        </div>
+                                        <div class="event-info w-100">
+                                            <h3 class="mb-3 text-center"><a href="#" title="">Copa Inter-Universidades 2025</a></h3>
+                                            <ul class="event-meta mb-3 list-unstyled">
+                                                <li><i class="far fa-clock thm-clr"></i> <strong>Horario:</strong> 8:00 AM</li>
+                                                <li><i class="fas fa-map-marker-alt thm-clr"></i> <strong>Lugar:</strong> Polideportivo de la UNAMAD</li>
+                                            </ul>
+                                            <p class="mb-3">Campeonato deportivo que fomenta el espíritu deportivo y la integración estudiantil entre universidades participantes.</p>
+                                            
+                                            <div class="event-details mt-3">
+                                                <h5 class="mb-2" style="color: #4facfe;">📋 Inscripciones:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-calendar-alt thm-clr"></i> <strong>Período:</strong> Del 25 de agosto al 31 de octubre del 2025</li>
+                                                    <li><i class="fas fa-money-bill-wave thm-clr"></i> <strong>Costos por disciplina:</strong></li>
+                                                    <li class="ml-3">• Fulbito (varones y mujeres): S/. 120</li>
+                                                    <li class="ml-3">• Vóley (varones y mujeres): S/. 120</li>
+                                                    <li><i class="fas fa-info-circle thm-clr"></i> <strong>Nota:</strong> Enviar boucher con nombre de la universidad</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #4facfe;">💳 Cuentas para pagos:</h5>
+                                                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                                                    <p class="mb-1"><strong>Yape:</strong> 962 203 183</p>
+                                                    <p class="mb-1">Edgard Alexis Marca Ramos</p>
+                                                    <p class="mb-1"><strong>Banco de la Nación:</strong></p>
+                                                    <p class="mb-1">Cuenta: 04-167-045737</p>
+                                                    <p class="mb-0">Edgard Alexis Marca Ramos</p>
+                                                </div>
+                                                
+                                                <h5 class="mb-2" style="color: #4facfe;">📱 Contacto para envío de boucher:</h5>
+                                                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                                                    <p class="mb-0"><i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp: 931 559 655</p>
+                                                </div>
+                                                
+                                                <h5 class="mb-2" style="color: #4facfe;">⚽ Disciplinas Deportivas:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-futbol thm-clr"></i> <strong>Fulbito:</strong> Varones y Mujeres</li>
+                                                    <li><i class="fas fa-volleyball-ball thm-clr"></i> <strong>Vóley:</strong> Varones y Mujeres</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #4facfe;">📌 Importante:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li>• Fecha límite: 31 de octubre 2025</li>
+                                                    <li>• Enviar boucher por cada disciplina</li>
+                                                    <li>• Indicar nombre de la universidad inscrita</li>
+                                                </ul>
+                                                
+                                                <a class="thm-btn d-inline-block w-100 text-center" href="bases_concurso/BASES COPA INTER-UNIVERSIDADES 2025 ACTUALIZADA.docx" download>
+                                                    <i class="fas fa-download"></i> Descargar Bases Completas
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Información adicional -->
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <div class="concurso-info-box p-4" style="background: rgba(255, 107, 107, 0.1); border-radius: 15px;">
+                                        <h3 class="thm-clr mb-3">¡Inscríbete y Participa!</h3>
+                                        <p class="mb-3">Todos los concursos están abiertos para estudiantes de Ingeniería Agroindustrial de las universidades participantes.</p>
+                                        <p class="mb-0"><strong>Para más información contactar:</strong></p>
+                                        <ul class="list-unstyled mt-2">
+                                            <li><i class="fas fa-phone thm-clr"></i> Cel: +51 938200014 (Presidente)</li>
+                                            <li><i class="fas fa-envelope thm-clr"></i> Email: coneia2025@unamad.edu.pe</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Concursos Wrap -->
+                    </div>
+                </div>
+            </section>
             
             <section>
                 <div class="w-100 position-relative">
@@ -811,10 +1021,10 @@
         <!-- Script para el contador (ejemplo básico) -->
         <script>
             // Fecha de inicio del evento: 10 de noviembre de 2025 a las 9:00 AM
-            const countdownDate = new Date("November 10, 2025 09:00:00").getTime();
+            const countdownDate = new Date("2025-11-10T09:00:00").getTime();
             
             // Fecha de fin del evento (opcional, para mostrar duración)
-            const eventEndDate = new Date("November 14, 2025 18:00:00").getTime();
+            const eventEndDate = new Date("2025-11-14T18:00:00").getTime();
 
             const updateCountdown = () => {
                 const now = new Date().getTime();
@@ -827,26 +1037,46 @@
                     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                    document.querySelector('.days').textContent = days.toString().padStart(2, '0');
-                    document.querySelector('.hours').textContent = hours.toString().padStart(2, '0');
-                    document.querySelector('.minutes').textContent = minutes.toString().padStart(2, '0');
-                    document.querySelector('.seconds').textContent = seconds.toString().padStart(2, '0');
+                    // Actualizar los elementos del contador
+                    const daysElement = document.querySelector('.days');
+                    const hoursElement = document.querySelector('.hours');
+                    const minutesElement = document.querySelector('.minutes');
+                    const secondsElement = document.querySelector('.seconds');
+
+                    if (daysElement) daysElement.textContent = days.toString().padStart(2, '0');
+                    if (hoursElement) hoursElement.textContent = hours.toString().padStart(2, '0');
+                    if (minutesElement) minutesElement.textContent = minutes.toString().padStart(2, '0');
+                    if (secondsElement) secondsElement.textContent = seconds.toString().padStart(2, '0');
                 } else if (now < eventEndDate) {
                     // El evento está en curso
-                    document.querySelector('.countdown').innerHTML = `
-                        <h3 class="text-success">¡El evento está en curso!</h3>
-                        <p>Del 10 al 14 de noviembre de 2025</p>
-                    `;
+                    const countdownElement = document.querySelector('.countdown');
+                    if (countdownElement) {
+                        countdownElement.innerHTML = `
+                            <h3 class="text-success">¡El evento está en curso!</h3>
+                            <p>Del 10 al 14 de noviembre de 2025</p>
+                        `;
+                    }
                     clearInterval(countdownInterval);
                 } else {
                     // El evento ha terminado
-                    document.querySelector('.countdown').innerHTML = '<h3>¡El evento ha finalizado!</h3>';
+                    const countdownElement = document.querySelector('.countdown');
+                    if (countdownElement) {
+                        countdownElement.innerHTML = '<h3>¡El evento ha finalizado!</h3>';
+                    }
                     clearInterval(countdownInterval);
                 }
             };
 
-            const countdownInterval = setInterval(updateCountdown, 1000);
-            updateCountdown(); // Llamada inicial
+            // Ejecutar el contador cuando el DOM esté listo
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', () => {
+                    updateCountdown(); // Llamada inicial
+                    const countdownInterval = setInterval(updateCountdown, 1000);
+                });
+            } else {
+                updateCountdown(); // Llamada inicial
+                const countdownInterval = setInterval(updateCountdown, 1000);
+            }
         </script>
         <script>
         // Mostrar botones después de hacer scroll
