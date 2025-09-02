@@ -41,7 +41,7 @@
             width: auto;
             height: auto;
             transform: translateX(-50%) translateY(-50%);
-            z-index: -2;
+            z-index: 0;
             object-fit: cover;
         }
         
@@ -53,13 +53,13 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según necesites */
-            z-index: -1;
+            z-index: 1;
         }
         
         /* Asegurar que el contenido esté sobre el video */
-        .container {
+        .container-with-video .container {
             position: relative;
-            z-index: 1;
+            z-index: 2;
         }
         
         /* Estilos adicionales para mejorar la visibilidad del texto */
@@ -329,14 +329,13 @@
                                         </ul> -->
                                     </li>
                                     <li><a href="#ejes-tematicos" title="">Ejes Tematicos</a></li>
-                                    <li><a href="#concursos" title="">Concursos</a></li>
                                     <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Madre de Dios</a>
                                         <ul class="children mb-0 list-unstyled">
                                             
                                             <li><a href="#" title="">Video</a></li>
                                             <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Servicios</a>
                                                 <ul class="children mb-0 list-unstyled">
-                                                    <li><a href="#" title="">Hoteleros</a></li>
+                                                    <li><a href="{{ route('hospedajes') }}" title="">Hoteleros</a></li>
                                                     
                                                     <li><a href="#" title="">Alimentacion</a></li>
                                                     
@@ -403,7 +402,6 @@
                             <li><a href="faq.html" title="">FAQ'S Page</a></li>
                         </ul> -->
                     </li>
-                    <li><a href="#concursos" title="">Concursos</a></li>
                     <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Madre de Dios</a>
                         <!-- <ul class="children list-unstyled">
                             <li><a href="gallery.html" title="">Gallery</a></li>
@@ -426,9 +424,7 @@
             <section>
                 <div class="w-100 position-relative">
                     <div class="about-me-wrap pt-140 position-relative w-100">
-	                    <img class="img-fluid shp1 rotate-anim right revs position-absolute" src="assets/images/shp1.png" alt="Shap 1">
-	                    <img class="img-fluid shp2 rotate-anim right position-absolute" src="assets/images/shp2.png" alt="Shap 2">
-                    	 <div class="container-with-video">
+	                    <div class="container-with-video">
         <!-- Video de fondo -->
         <video class="video-background" autoplay muted loop playsinline>
             <source src="assets/videos/video_portada.mp4" type="video/mp4">
@@ -442,6 +438,8 @@
         
         <!-- Tu contenido original -->
         <div class="container">
+            <img class="img-fluid shp1 rotate-anim right revs position-absolute" src="assets/images/shp1.png" alt="Shap 1" style="z-index: 3;">
+            <img class="img-fluid shp2 rotate-anim right position-absolute" src="assets/images/shp2.png" alt="Shap 2" style="z-index: 3;">
             <div class="about-me w-100">
                 <div class="row justify-content-center align-items-end">
                     <div class="col-md-6 col-sm-12 col-lg-6 order-md-1">
@@ -486,6 +484,83 @@
                     </div><!-- About Me Wrap -->
                 </div>
             </section>
+            
+            <!--
+            <section id="envio-documentos">
+                <div class="w-100 pt-100 pb-100 position-relative" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="document-info text-white">
+                                    <h2 class="mb-4 text-white">📄 Envío de Documentos y Trabajos</h2>
+                                    <p class="mb-4 text-white" style="font-size: 18px; color: white !important;">
+                                        Para participar en las ponencias, proyectos de investigación y demás actividades académicas del XXIV CONEIA 2025, 
+                                        envía tus documentos y trabajos al correo oficial del evento.
+                                    </p>
+                                    <div class="document-requirements p-4 mb-4" style="background: rgba(255,255,255,0.1); border-radius: 15px;">
+                                        <h4 class="text-white mb-3">Documentos requeridos:</h4>
+                                        <ul class="list-unstyled text-white">
+                                            <li class="mb-2 text-white" style="color: white !important;"><i class="fas fa-check-circle" style="color: white;"></i> Resúmenes de ponencias (formato PDF)</li>
+                                            <li class="mb-2 text-white" style="color: white !important;"><i class="fas fa-check-circle" style="color: white;"></i> Artículos para publicación</li>
+                                            <li class="mb-2 text-white" style="color: white !important;"><i class="fas fa-check-circle" style="color: white;"></i> Proyectos de investigación</li>
+                                            <li class="mb-2 text-white" style="color: white !important;"><i class="fas fa-check-circle" style="color: white;"></i> Constancia de matrícula</li>
+                                            <li class="mb-2 text-white" style="color: white !important;"><i class="fas fa-check-circle" style="color: white;"></i> Documento de identidad (DNI)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="email-box text-center p-5" style="background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                                    <div class="email-icon mb-4">
+                                        <i class="fas fa-envelope" style="font-size: 60px; color: #667eea;"></i>
+                                    </div>
+                                    <h3 class="mb-3" style="color: #333;">Envía tus documentos a:</h3>
+                                    <div class="email-address p-3 mb-4" style="background: #f8f9fa; border-radius: 10px; border: 2px dashed #667eea;">
+                                        <h4 style="color: #667eea; margin: 0;">
+                                            <i class="fas fa-paper-plane"></i> cursos_iag@unamad.edu.pe
+                                        </h4>
+                                    </div>
+                                    <div class="instructions">
+                                        <h5 class="mb-3">Formato del asunto del correo:</h5>
+                                        <p class="mb-2"><strong>Para ponencias:</strong> PONENCIA_NOMBRE_UNIVERSIDAD</p>
+                                        <p class="mb-2"><strong>Para proyectos:</strong> PROYECTO_NOMBRE_UNIVERSIDAD</p>
+                                        <p class="mb-2"><strong>Para inscripciones:</strong> INSCRIPCION_NOMBRE_UNIVERSIDAD</p>
+                                    </div>
+                                    <div class="deadline-box mt-4 p-3" style="background: #fff3cd; border-radius: 10px;">
+                                        <p class="mb-0" style="color: #856404;">
+                                            <i class="fas fa-exclamation-triangle"></i> 
+                                            <strong>Fecha límite:</strong> Consulta las bases de cada concurso
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="additional-info text-center p-4" style="background: rgba(255,255,255,0.95); border-radius: 15px;">
+                                    <h4 class="mb-3">Importante:</h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item mx-3">
+                                            <i class="fas fa-file-pdf thm-clr"></i> Archivos en formato PDF
+                                        </li>
+                                        <li class="list-inline-item mx-3">
+                                            <i class="fas fa-weight thm-clr"></i> Tamaño máximo: 10MB
+                                        </li>
+                                        <li class="list-inline-item mx-3">
+                                            <i class="fas fa-language thm-clr"></i> Idioma: Español
+                                        </li>
+                                        <li class="list-inline-item mx-3">
+                                            <i class="fas fa-clock thm-clr"></i> Respuesta en 48 horas
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+            
              <section>
                 <div class="w-100 pt-120 pb-120 position-relative">
                     <div class="container">
@@ -768,10 +843,11 @@
                         </div><!-- Sec Title -->
                         
                         <div class="concursos-wrap w-100">
-                            <div class="row">
+                            <div class="row justify-content-center">
+                                <!-- Primera fila: Danzas y Miss & Mister -->
                                 <!-- Concurso de Danzas -->
-                                <div class="col-md-6 col-sm-12 col-lg-4">
-                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 20px;">
+                                <div class="col-md-6 col-sm-12 col-lg-5 mb-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
                                         <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 10px;">
                                             <h4 class="mb-0">11 de Noviembre</h4>
                                             <span>Martes - 2025</span>
@@ -830,8 +906,8 @@
                                 </div>
                                 
                                 <!-- Concurso Miss y Mister -->
-                                <div class="col-md-6 col-sm-12 col-lg-4">
-                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 20px;">
+                                <div class="col-md-6 col-sm-12 col-lg-5 mb-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
                                         <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 15px; border-radius: 10px;">
                                             <h4 class="mb-0">13 de Noviembre</h4>
                                             <span>Jueves - 2025</span>
@@ -885,10 +961,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+                            </div>
+                            
+                            <!-- Segunda fila: Copa Inter-Universidades y Trabajos de Investigación -->
+                            <div class="row justify-content-center" style="margin-top: 40px;">
                                 <!-- Copa Inter-Universidades -->
-                                <div class="col-md-6 col-sm-12 col-lg-4">
-                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 20px;">
+                                <div class="col-md-6 col-sm-12 col-lg-5 mb-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
                                         <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 15px; border-radius: 10px;">
                                             <h4 class="mb-0">12 de Noviembre</h4>
                                             <span>Miércoles - 2025</span>
@@ -945,9 +1024,82 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Concurso de Trabajos de Investigación -->
+                                <div class="col-md-6 col-sm-12 col-lg-5 mb-4">
+                                    <div class="event-box w-100 position-relative overflow-hidden" style="border: 2px solid #e0e0e0; border-radius: 15px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                                        <div class="event-date-header text-center mb-3" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 15px; border-radius: 10px;">
+                                            <h4 class="mb-0">10-14 de Noviembre</h4>
+                                            <span>Durante el evento - 2025</span>
+                                        </div>
+                                        <div class="event-info w-100">
+                                            <h3 class="mb-3 text-center"><a href="#" title="">Concurso de Trabajos de Investigación Científica y Tecnológica</a></h3>
+                                            <ul class="event-meta mb-3 list-unstyled">
+                                                <li><i class="far fa-clock thm-clr"></i> <strong>Presentaciones:</strong> Durante el congreso</li>
+                                                <li><i class="fas fa-map-marker-alt thm-clr"></i> <strong>Lugar:</strong> UNAMAD</li>
+                                            </ul>
+                                            <p class="mb-3">Fomenta la generación y difusión de conocimiento en el ámbito agroindustrial, promoviendo soluciones innovadoras y sostenibles.</p>
+                                            
+                                            <div class="event-details mt-3">
+                                                <h5 class="mb-2" style="color: #fa709a;">📋 Etapas de Inscripción:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><strong>ETAPA I (Gratuita):</strong></li>
+                                                    <li><i class="fas fa-calendar-alt thm-clr"></i> Hasta el 15 de septiembre 2025</li>
+                                                    <li><i class="fas fa-file-alt thm-clr"></i> Envío de resumen (máx. 300 palabras)</li>
+                                                    <li class="mt-2"><strong>ETAPA II (Con costo):</strong></li>
+                                                    <li><i class="fas fa-calendar-alt thm-clr"></i> Hasta el 15 de octubre 2025</li>
+                                                    <li><i class="fas fa-money-bill-wave thm-clr"></i> Comunicación oral: S/. 50</li>
+                                                    <li><i class="fas fa-money-bill-wave thm-clr"></i> Póster: S/. 40</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #fa709a;">💳 Cuenta para pagos:</h5>
+                                                <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                                                    <p class="mb-1"><strong>Yape:</strong> +51 962618961</p>
+                                                    <p class="mb-0">Lila Ruby Isuiza Pérez</p>
+                                                </div>
+                                                
+                                                <h5 class="mb-2" style="color: #fa709a;">📚 Categorías:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-microphone thm-clr"></i> <strong>Comunicación Oral:</strong> 20 min exposición + 5 min preguntas</li>
+                                                    <li><i class="fas fa-chart-bar thm-clr"></i> <strong>Póster:</strong> 10 min exposición + 5 min preguntas</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #fa709a;">🎯 Ejes Temáticos:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li>• Ingeniería e innovación en procesos alimentarios</li>
+                                                    <li>• Biotecnología y aprovechamiento de subproductos</li>
+                                                    <li>• Productos funcionales y valor agregado</li>
+                                                    <li>• Seguridad alimentaria e inocuidad</li>
+                                                    <li>• Biocombustible y energía</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #fa709a;">🏆 Premios:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li><i class="fas fa-medal" style="color: gold;"></i> <strong>1er lugar:</strong> Medalla + Diploma + Premio sorpresa</li>
+                                                    <li><i class="fas fa-medal" style="color: silver;"></i> <strong>2do lugar:</strong> Medalla + Diploma + Premio sorpresa</li>
+                                                    <li><i class="fas fa-medal" style="color: #cd7f32;"></i> <strong>3er lugar:</strong> Medalla + Diploma</li>
+                                                    <li><i class="fas fa-star thm-clr"></i> Menciones honoríficas especiales</li>
+                                                </ul>
+                                                
+                                                <h5 class="mb-2" style="color: #fa709a;">📌 Requisitos:</h5>
+                                                <ul class="list-unstyled mb-3">
+                                                    <li>• Máximo 3 estudiantes y 1 docente asesor</li>
+                                                    <li>• Máximo 2 trabajos por universidad por categoría</li>
+                                                    <li>• CTI Vitae y ORCID ID activos</li>
+                                                    <li>• Trabajos de los últimos 5 años</li>
+                                                    <li>• Plagio menor al 20% (Turnitin)</li>
+                                                </ul>
+                                                
+                                                <a class="thm-btn d-inline-block w-100 text-center" href="bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf" download>
+                                                    <i class="fas fa-download"></i> Descargar Bases Completas
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             
                             <!-- Información adicional -->
+                            <!--
                             <div class="row mt-5">
                                 <div class="col-12 text-center">
                                     <div class="concurso-info-box p-4" style="background: rgba(255, 107, 107, 0.1); border-radius: 15px;">
@@ -956,11 +1108,12 @@
                                         <p class="mb-0"><strong>Para más información contactar:</strong></p>
                                         <ul class="list-unstyled mt-2">
                                             <li><i class="fas fa-phone thm-clr"></i> Cel: +51 938200014 (Presidente)</li>
-                                            <li><i class="fas fa-envelope thm-clr"></i> Email: coneia2025@unamad.edu.pe</li>
+                                            <li><i class="fas fa-envelope thm-clr"></i> Email: cursos_iag@unamad.edu.pe</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+                            -->
                         </div><!-- Concursos Wrap -->
                     </div>
                 </div>
