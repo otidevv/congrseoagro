@@ -175,7 +175,7 @@
                                 <div class="contacto-info">
                                     <h6><i class="fas fa-map-marker-alt"></i> Ubicación:</h6>
                                     <p class="mb-2">Jr. Billinghurst 351, Puerto Maldonado</p>
-                                    <a href="https://maps.app.goo.gl/i5wHFZYEQwyj7zsg8" target="_blank" class="btn btn-outline-primary btn-sm mb-3">
+                                    <a href="https://maps.app.goo.gl/QjiFpaGxjR4XH5xZ9" target="_blank" class="btn btn-outline-primary btn-sm mb-3">
                                         <i class="fas fa-map-marked-alt"></i> Ver en Google Maps
                                     </a>
                                     <h6><i class="fas fa-phone"></i> Contacto:</h6>
@@ -260,11 +260,11 @@
                     <i class="fas fa-hotel"></i> Categoría Estándar
                 </h2>
                 <div class="row">
-                    <!-- Hotel Cabañaquinta -->
+                    <!-- Hotel según PDF oficial -->
                     <div class="col-lg-4 col-md-6">
                         <div class="hospedaje-card">
                             <div class="hospedaje-header categoria-estandar">
-                                <h4 class="mb-0">Hotel Cabañaquinta</h4>
+                                <h4 class="mb-0">Hotel Anaconda</h4>
                                 <span class="d-block mt-2">⭐⭐⭐ Estándar</span>
                             </div>
                             <div class="hospedaje-body">
@@ -291,11 +291,11 @@
                                 </div>
                                 
                                 <div class="contacto-info">
-                                    <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Jr. Cusco 535</p>
-                                    <a href="https://www.google.com/maps/search/Hotel+Cabañaquinta+Jr+Cusco+535+Puerto+Maldonado" target="_blank" class="btn btn-outline-primary btn-sm mb-2">
+                                    <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Av. León Velarde 431</p>
+                                    <a href="https://www.google.com/maps/search/Hotel+Anaconda+León+Velarde+431+Puerto+Maldonado" target="_blank" class="btn btn-outline-primary btn-sm mb-2">
                                         <i class="fas fa-map-marked-alt"></i> Ver en Google Maps
                                     </a>
-                                    <p class="mb-0"><i class="fas fa-phone"></i> (082) 571-045</p>
+                                    <p class="mb-0"><i class="fas fa-phone"></i> (082) 571-134</p>
                                 </div>
                             </div>
                         </div>
