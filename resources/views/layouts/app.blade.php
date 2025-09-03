@@ -231,6 +231,11 @@
                         <div class="header-right-btns d-flex align-items-center">
                             @auth
                                 <div class="user-menu mr-3 d-flex align-items-center">
+                                    @if(Auth::user()->is_admin)
+                                        <a href="{{ route('admin.dashboard') }}" class="thm-clr mr-3 text-decoration-none">
+                                            <i class="fas fa-cogs"></i> Admin
+                                        </a>
+                                    @endif
                                     <a href="{{ route('submissions.index') }}" class="thm-clr mr-3 text-decoration-none">
                                         <i class="fas fa-folder"></i> Mis Trabajos
                                     </a>
