@@ -135,6 +135,24 @@
                 font-size: 14px;
             }
         }
+
+        /* Clase personalizada para expandir el logo-menu-wrap */
+        .logo-menu-wrap-expanded {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            margin-left: calc(-50vw + 50%) !important;
+            margin-right: calc(-50vw + 50%) !important;
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+        }
+
+        /* Asegurar que el header esté por encima del video */
+        header {
+            z-index: 1000 !important;
+            position: relative;
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
         
         @yield('styles')
     </style>
@@ -144,7 +162,7 @@
         <!-- Header -->
         <header class="stick style3 w-100">
             <div class="container">
-                <div class="logo-menu-wrap w-100 d-flex flex-wrap justify-content-between align-items-start">
+                <div class="logo-menu-wrap logo-menu-wrap-expanded w-100 d-flex flex-wrap justify-content-between align-items-start">
                     <div class="logo">
                         <h1 class="mb-0">
                             <a href="{{ route('home') }}" title="Inicio">
@@ -186,6 +204,15 @@
                                     <a href="https://forms.gle/pRg15EwZvcDs8gpo8" title="">Inscripcion</a>
                                 </li>
                                 <li><a href="{{ route('home') }}#ejes-tematicos" title="">Ejes Tematicos</a></li>
+                                <li><a href="{{ route('home') }}#concursos" title="">Concursos</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="javascript:void(0);" title="">Trabajos</a>
+                                    <ul class="children mb-0 list-unstyled">
+                                        <li><a href="{{ route('formato.resumenes') }}" title="">Formato de Resúmenes</a></li>
+                                        <li><a href="{{ route('envio.resumenes') }}" title="">Envío de Resúmenes</a></li>
+                                        <li><a href="{{ asset('bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf') }}" download title="">Descargar Bases</a></li>
+                                    </ul>
+                                </li>
                                 <li class="menu-item-has-children">
                                     <a href="javascript:void(0);" title="">Madre de Dios</a>
                                     <ul class="children mb-0 list-unstyled">
@@ -227,6 +254,14 @@
                 </li>
                 <li class="menu-item-has-children">
                     <a href="{{ route('home') }}#ejes-tematicos" title="">Ejes Tematicos</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="javascript:void(0);" title="">Trabajos</a>
+                    <ul class="children list-unstyled">
+                        <li><a href="{{ route('formato.resumenes') }}" title="">Formato de Resúmenes</a></li>
+                        <li><a href="{{ route('envio.resumenes') }}" title="">Envío de Resúmenes</a></li>
+                        <li><a href="{{ asset('bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf') }}" download title="">Descargar Bases</a></li>
+                    </ul>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="javascript:void(0);" title="">Madre de Dios</a>
