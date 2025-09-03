@@ -228,7 +228,30 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="header-right-btns">
+                        <div class="header-right-btns d-flex align-items-center">
+                            @auth
+                                <div class="user-menu mr-3 d-flex align-items-center">
+                                    <a href="{{ route('submissions.index') }}" class="thm-clr mr-3 text-decoration-none">
+                                        <i class="fas fa-folder"></i> Mis Trabajos
+                                    </a>
+                                    <span class="text-muted mr-2">Hola, {{ Auth::user()->name }}</span>
+                                    <form method="POST" action="{{ route('logout') }}" class="d-inline">
+                                        @csrf
+                                        <button type="submit" class="btn btn-link p-0 text-decoration-none thm-clr" style="border: none;">
+                                            <i class="fas fa-sign-out-alt"></i> Salir
+                                        </button>
+                                    </form>
+                                </div>
+                            @else
+                                <div class="auth-links mr-3">
+                                    <a href="{{ route('login') }}" class="thm-clr mr-3 text-decoration-none">
+                                        <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                                    </a>
+                                    <a href="{{ route('register') }}" class="thm-btn" style="padding: 8px 20px; font-size: 14px;">
+                                        <i class="fas fa-user-plus"></i> Registro
+                                    </a>
+                                </div>
+                            @endauth
                             <a class="menu-btn2 rounded-circle" href="javascript:void(0);" title=""><i></i></a>
                         </div>
                     </nav>
