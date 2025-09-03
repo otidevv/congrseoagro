@@ -34,7 +34,6 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según necesites */
         z-index: 1;
-        pointer-events: none; /* No interfiere con el header */
     }
     
     /* Asegurar que el contenido esté sobre el video */
