@@ -17,6 +17,17 @@ Route::get('/formato-resumenes', function () {
     return view('formato-resumenes');
 })->name('formato.resumenes');
 
+// Ruta para el PDF del cronograma
+Route::get('/cronograma', function () {
+    $path = public_path('img/cronograma/cronograma_coneia.pdf');
+
+    if (!file_exists($path)) {
+        abort(404);
+    }
+
+    return response()->file($path);
+})->name('cronograma');
+
 // Rutas de autenticación
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
