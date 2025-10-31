@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <!-- Mirrored from html.cwsthemes.com/aconte/index3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jun 2025 16:51:37 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,10 +21,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/color.css') }}">
-    
+
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Estilos personalizados del layout -->
     <style>
         /* Estilos para botones flotantes */
@@ -85,6 +86,7 @@
                 transform: translateY(100px);
                 opacity: 0;
             }
+
             to {
                 transform: translateY(0);
                 opacity: 1;
@@ -107,7 +109,7 @@
             margin-top: 20px;
             transition: all 0.3s ease;
         }
-        
+
         .thm-btn:hover {
             background: #ff5252;
             transform: translateY(-2px);
@@ -123,11 +125,11 @@
                 right: 20px;
                 font-size: 25px;
             }
-            
+
             .whatsapp-icon {
                 margin-top: 12px;
             }
-            
+
             .register-float {
                 bottom: 20px;
                 left: 20px;
@@ -151,22 +153,26 @@
             z-index: 1000 !important;
             position: relative;
             background-color: #ffffff !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         @yield('styles')
     </style>
 </head>
+
 <body>
     <main>
         <!-- Header -->
         <header class="stick style3 w-100">
             <div class="container">
-                <div class="logo-menu-wrap logo-menu-wrap-expanded w-100 d-flex flex-wrap justify-content-between align-items-start">
+                <div
+                    class="logo-menu-wrap logo-menu-wrap-expanded w-100 d-flex flex-wrap justify-content-between align-items-start">
                     <div class="logo">
                         <h1 class="mb-0">
                             <a href="{{ route('home') }}" title="Inicio">
-                                <img class="img-fluid" style="height: 70px;" src="{{ asset('assets/images/logo3.png') }}" alt="Logo" srcset="{{ asset('assets/logo/logoconeia.png') }}">
+                                <img class="img-fluid" style="height: 70px;"
+                                    src="{{ asset('assets/images/logo3.png') }}" alt="Logo"
+                                    srcset="{{ asset('assets/logo/logoconeia.png') }}">
                             </a>
                         </h1>
                     </div><!-- Logo -->
@@ -187,13 +193,16 @@
                                                     <a href="javascript:void(0);" title="">Ponencias</a>
                                                     <ul class="children mb-0 list-unstyled">
                                                         <li><a href="#" title="">Resumen</a></li>
-                                                        <li><a href="#" title="">Articulo para Publicacion</a></li>
+                                                        <li><a href="#" title="">Articulo para
+                                                                Publicacion</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#" title="">Concurso de Proyectos de Investigacion</a></li>
+                                                <li><a href="#" title="">Concurso de Proyectos de
+                                                        Investigacion</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ route('home') }}#comision-central" title="">Comision Central</a></li>
+                                        <li><a href="{{ route('home') }}#comision-central" title="">Comision
+                                                Central</a></li>
                                         <li><a href="#" title="">Programa</a></li>
                                     </ul>
                                 </li>
@@ -204,13 +213,17 @@
                                     <a href="https://forms.gle/pRg15EwZvcDs8gpo8" title="">Inscripcion</a>
                                 </li>
                                 <li><a href="{{ route('home') }}#ejes-tematicos" title="">Ejes Tematicos</a></li>
+                                <li><a href="/cronograma" title="">Cronograma</a></li>
                                 <li><a href="{{ route('home') }}#concursos" title="">Concursos</a></li>
                                 <li class="menu-item-has-children">
                                     <a href="javascript:void(0);" title="">Trabajos</a>
                                     <ul class="children mb-0 list-unstyled">
-                                        <li><a href="{{ route('formato.resumenes') }}" title="">Formato de Resúmenes</a></li>
-                                        <li><a href="{{ route('envio.resumenes') }}" title="">Envío de Resúmenes</a></li>
-                                        <li><a href="{{ asset('bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf') }}" download title="">Descargar Bases</a></li>
+                                        <li><a href="{{ route('formato.resumenes') }}" title="">Formato de
+                                                Resúmenes</a></li>
+                                        <li><a href="{{ route('envio.resumenes') }}" title="">Envío de
+                                                Resúmenes</a></li>
+                                        <li><a href="{{ asset('bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf') }}"
+                                                download title="">Descargar Bases</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
@@ -220,7 +233,8 @@
                                         <li class="menu-item-has-children">
                                             <a href="javascript:void(0);" title="">Servicios</a>
                                             <ul class="children mb-0 list-unstyled">
-                                                <li><a href="{{ route('hospedajes') }}" title="">Hoteleros</a></li>
+                                                <li><a href="{{ route('hospedajes') }}" title="">Hoteleros</a>
+                                                </li>
                                                 <li><a href="#" title="">Alimentacion</a></li>
                                             </ul>
                                         </li>
@@ -231,8 +245,9 @@
                         <div class="header-right-btns d-flex align-items-center">
                             @auth
                                 <div class="user-menu mr-3 d-flex align-items-center">
-                                    @if(Auth::user()->is_admin)
-                                        <a href="{{ route('admin.dashboard') }}" class="thm-clr mr-3 text-decoration-none">
+                                    @if (Auth::user()->is_admin)
+                                        <a href="{{ route('admin.dashboard') }}"
+                                            class="thm-clr mr-3 text-decoration-none">
                                             <i class="fas fa-cogs"></i> Admin
                                         </a>
                                     @endif
@@ -242,7 +257,8 @@
                                     <span class="text-muted mr-2">Hola, {{ Auth::user()->name }}</span>
                                     <form method="POST" action="{{ route('logout') }}" class="d-inline">
                                         @csrf
-                                        <button type="submit" class="btn btn-link p-0 text-decoration-none thm-clr" style="border: none;">
+                                        <button type="submit" class="btn btn-link p-0 text-decoration-none thm-clr"
+                                            style="border: none;">
                                             <i class="fas fa-sign-out-alt"></i> Salir
                                         </button>
                                     </form>
@@ -252,7 +268,8 @@
                                     <a href="{{ route('login') }}" class="thm-clr mr-3 text-decoration-none">
                                         <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
                                     </a>
-                                    <a href="{{ route('register') }}" class="thm-btn" style="padding: 8px 20px; font-size: 14px;">
+                                    <a href="{{ route('register') }}" class="thm-btn"
+                                        style="padding: 8px 20px; font-size: 14px;">
                                         <i class="fas fa-user-plus"></i> Registro
                                     </a>
                                 </div>
@@ -278,17 +295,22 @@
                     <a href="{{ route('home') }}#beneficios" title="">Beneficios</a>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIHVAF35m7G9iC1XbGd_jzSZ1RFH-FnfOQsxRvzL4DWyGb3w/viewform" title="">Inscripcion</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIHVAF35m7G9iC1XbGd_jzSZ1RFH-FnfOQsxRvzL4DWyGb3w/viewform"
+                        title="">Inscripcion</a>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="{{ route('home') }}#ejes-tematicos" title="">Ejes Tematicos</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/cronograma" title="">Cronograma</a>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="javascript:void(0);" title="">Trabajos</a>
                     <ul class="children list-unstyled">
                         <li><a href="{{ route('formato.resumenes') }}" title="">Formato de Resúmenes</a></li>
                         <li><a href="{{ route('envio.resumenes') }}" title="">Envío de Resúmenes</a></li>
-                        <li><a href="{{ asset('bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf') }}" download title="">Descargar Bases</a></li>
+                        <li><a href="{{ asset('bases_concurso/Bases Concurso TRABAJOS DE INVESTIGACIÓN CIENTÍFICA Y TECNOLÓGICA XXIV CONEIA 2025.pdf') }}"
+                                download title="">Descargar Bases</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
@@ -296,38 +318,36 @@
                 </li>
             </ul>
         </div><!-- Menu Wrap -->
-        
+
         <!-- Contenido principal -->
         @yield('content')
-        
+
         <!-- Footer -->
         <div class="bottom-bar w-100">
             <div class="container">
                 <div class="bottom-bar-inner d-flex flex-wrap align-items-center justify-content-between w-100">
                     <p class="mb-0">
-                        <a href="https://coneia-madre-de-dios-2025.unamad.edu.pe/" title="">UNAMAD</a> - Universidad Nacional Amazonica de Madre de Dios
+                        <a href="https://coneia-madre-de-dios-2025.unamad.edu.pe/" title="">UNAMAD</a> -
+                        Universidad Nacional Amazonica de Madre de Dios
                     </p>
                 </div>
             </div>
         </div><!-- Bottom Bar -->
     </main><!-- Main Wrapper -->
-    
+
     <!-- Botones flotantes -->
     <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/51938200014"
-       class="whatsapp-float float-button-animate" 
-       target="_blank"
-       title="Contáctanos por WhatsApp">
+    <a href="https://wa.me/51938200014" class="whatsapp-float float-button-animate" target="_blank"
+        title="Contáctanos por WhatsApp">
         <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
 
     <!-- Botón flotante de Registro -->
-    <a href="https://forms.gle/pRg15EwZvcDs8gpo8" 
-       class="register-float float-button-animate"
-       title="Regístrate ahora">
+    <a href="https://forms.gle/pRg15EwZvcDs8gpo8" class="register-float float-button-animate"
+        title="Regístrate ahora">
         <i class="fas fa-user-plus"></i> Regístrate
     </a>
-    
+
     <!-- Scripts -->
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
@@ -339,13 +359,13 @@
     <script src="{{ asset('assets/js/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('assets/js/slick.min.js') }}"></script>
     <script src="{{ asset('assets/js/custom-scripts.js') }}"></script>
-    
+
     <script>
         // Mostrar botones después de hacer scroll
         window.addEventListener('scroll', function() {
             const whatsappBtn = document.querySelector('.whatsapp-float');
             const registerBtn = document.querySelector('.register-float');
-            
+
             if (window.scrollY > 100) {
                 whatsappBtn.style.display = 'block';
                 registerBtn.style.display = 'block';
@@ -356,9 +376,10 @@
             }
         });
     </script>
-    
+
     @yield('scripts')
-</body>	
+</body>
 
 <!-- Mirrored from html.cwsthemes.com/aconte/index3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jun 2025 16:51:42 GMT -->
+
 </html>
