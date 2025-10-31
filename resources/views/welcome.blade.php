@@ -238,6 +238,152 @@
         .ponente-card:hover::after {
             opacity: 1;
         }
+
+        /* Estilos para el modal de flayers */
+        .flayers-modal {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .flayers-modal.active {
+            display: flex;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .flayers-modal-content {
+            position: relative;
+            max-width: 800px;
+            max-height: 90vh;
+            width: 100%;
+        }
+
+        .flayers-modal-content img {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 15px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+        }
+
+        .flayers-modal-close {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            color: #fff;
+            font-size: 45px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #ff6b6b;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 100000;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .flayers-modal-close:hover {
+            transform: rotate(90deg) scale(1.1);
+            background: #ff5252;
+        }
+
+        .flayers-nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border: none;
+            padding: 15px 20px;
+            font-size: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            z-index: 10001;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flayers-nav-button:hover {
+            background: #fff;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .flayers-nav-button.prev {
+            left: -25px;
+        }
+
+        .flayers-nav-button.next {
+            right: -25px;
+        }
+
+        .flayers-indicator {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .flayers-indicator-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .flayers-indicator-dot.active {
+            background: #fff;
+            transform: scale(1.3);
+        }
+
+        @media (max-width: 768px) {
+            .flayers-modal-content {
+                max-width: 95%;
+            }
+
+            .flayers-nav-button {
+                width: 45px;
+                height: 45px;
+                font-size: 24px;
+                padding: 10px;
+            }
+
+            .flayers-nav-button.prev {
+                left: -10px;
+            }
+
+            .flayers-nav-button.next {
+                right: -10px;
+            }
+
+            .flayers-modal-close {
+                top: -10px;
+                right: -10px;
+                width: 40px;
+                height: 40px;
+                font-size: 35px;
+            }
+        }
     </style>
 @endsection
 
@@ -1137,6 +1283,22 @@
             </div><!-- Contact With Map -->
         </div>
     </section>
+
+    <!-- Modal de Flayers -->
+    <div id="flayersModal" class="flayers-modal">
+        <div class="flayers-modal-content">
+            <span class="flayers-modal-close">&times;</span>
+            <button class="flayers-nav-button prev">&#10094;</button>
+            <img id="flayerImage" src="{{ asset('img/flayers/flayer1.jpg') }}" alt="Flayer CONEIA 2025">
+            <button class="flayers-nav-button next">&#10095;</button>
+            <div class="flayers-indicator">
+                <span class="flayers-indicator-dot active" data-index="0"></span>
+                <span class="flayers-indicator-dot" data-index="1"></span>
+                <span class="flayers-indicator-dot" data-index="2"></span>
+                <span class="flayers-indicator-dot" data-index="3"></span>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('scripts')
@@ -1244,6 +1406,135 @@
                 modal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
+        });
+    </script>
+
+    <script>
+        // Script para el modal de flayers con carrusel
+        document.addEventListener('DOMContentLoaded', function() {
+            const flayersModal = document.getElementById('flayersModal');
+            const flayerImage = document.getElementById('flayerImage');
+            const closeBtn = document.querySelector('.flayers-modal-close');
+            const prevBtn = document.querySelector('.flayers-nav-button.prev');
+            const nextBtn = document.querySelector('.flayers-nav-button.next');
+            const indicators = document.querySelectorAll('.flayers-indicator-dot');
+
+            // Array de flayers
+            const flayers = [
+                "{{ asset('img/flayers/flayer1.jpg') }}",
+                "{{ asset('img/flayers/flayer2.jpg') }}",
+                "{{ asset('img/flayers/flayer3.jpg') }}",
+                "{{ asset('img/flayers/flayer4.jpg') }}"
+            ];
+
+            let currentIndex = 0;
+            let autoPlayInterval;
+
+            // Función para mostrar el flayer actual
+            function showFlayer(index) {
+                currentIndex = index;
+                flayerImage.src = flayers[index];
+
+                // Actualizar indicadores
+                indicators.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            // Función para ir al siguiente flayer
+            function nextFlayer() {
+                currentIndex = (currentIndex + 1) % flayers.length;
+                showFlayer(currentIndex);
+            }
+
+            // Función para ir al flayer anterior
+            function prevFlayer() {
+                currentIndex = (currentIndex - 1 + flayers.length) % flayers.length;
+                showFlayer(currentIndex);
+            }
+
+            // Función para cerrar el modal
+            function closeFlayersModal() {
+                flayersModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                stopAutoPlay();
+            }
+
+            // Función para iniciar auto-play
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextFlayer, 4000); // Cambia cada 4 segundos
+            }
+
+            // Función para detener auto-play
+            function stopAutoPlay() {
+                if (autoPlayInterval) {
+                    clearInterval(autoPlayInterval);
+                }
+            }
+
+            // Mostrar modal automáticamente al cargar la página
+            setTimeout(() => {
+                flayersModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                startAutoPlay();
+            }, 1000); // Espera 1 segundo después de cargar
+
+            // Event listeners
+            closeBtn.addEventListener('click', closeFlayersModal);
+
+            prevBtn.addEventListener('click', () => {
+                prevFlayer();
+                stopAutoPlay();
+                startAutoPlay(); // Reiniciar auto-play después de interacción
+            });
+
+            nextBtn.addEventListener('click', () => {
+                nextFlayer();
+                stopAutoPlay();
+                startAutoPlay(); // Reiniciar auto-play después de interacción
+            });
+
+            // Cerrar modal al hacer clic fuera de la imagen
+            flayersModal.addEventListener('click', function(e) {
+                if (e.target === flayersModal) {
+                    closeFlayersModal();
+                }
+            });
+
+            // Cerrar modal con la tecla ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && flayersModal.classList.contains('active')) {
+                    closeFlayersModal();
+                }
+            });
+
+            // Navegación con flechas del teclado
+            document.addEventListener('keydown', function(e) {
+                if (flayersModal.classList.contains('active')) {
+                    if (e.key === 'ArrowLeft') {
+                        prevFlayer();
+                        stopAutoPlay();
+                        startAutoPlay(); // Reiniciar auto-play después de interacción
+                    } else if (e.key === 'ArrowRight') {
+                        nextFlayer();
+                        stopAutoPlay();
+                        startAutoPlay(); // Reiniciar auto-play después de interacción
+                    }
+                }
+            });
+
+            // Indicadores clicables
+            indicators.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showFlayer(index);
+                    stopAutoPlay();
+                    startAutoPlay(); // Reiniciar auto-play después de interacción
+                });
+            });
         });
     </script>
 @endsection
