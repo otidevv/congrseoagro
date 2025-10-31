@@ -186,7 +186,7 @@
                                                 <li class="menu-item-has-children">
                                                     <a href="javascript:void(0);" title="">Ponencias</a>
                                                     <ul class="children mb-0 list-unstyled">
-                                                        <li><a href="#" title="">Resumen</a></li>
+                                                        <li><a href="https://coneia-madre-de-dios-2025.unamad.edu.pe/login" title="">Resumen</a></li>
                                                         <li><a href="#" title="">Articulo para Publicacion</a></li>
                                                     </ul>
                                                 </li>
